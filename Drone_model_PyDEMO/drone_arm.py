@@ -127,6 +127,7 @@ if __name__ == "__main__":
 		pre_theta = np.zeros(arm1.vec_org.shape)
 		pre_trans = np.zeros(arm1.vec_org.shape)		
 		
+		
 		i = 0
 		j = 0
 		theta_dev = 1.0

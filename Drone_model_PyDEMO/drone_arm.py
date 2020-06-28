@@ -110,6 +110,7 @@ def make_3Dgraph_asset(g_obj, x_range, y_range, z_range, title):
 
 if __name__ == "__main__":
 	try:
+		# call class
 		arm1 = Drone_arm(10,0)
 		arm2 = Drone_arm(10,90)
 		arm3 = Drone_arm(10,180)
@@ -118,16 +119,18 @@ if __name__ == "__main__":
 		color=["red", "orange", "green", "blue"]
 		print ("Arm vector\n", "arm1: ", arm[0].vec_org, "\narm2: ", arm[1].vec_org, "\narm3: ", arm[2].vec_org, "\narm4: ", arm[3].vec_org)
 
+		# define figure field 
 		fig = plt.figure(figsize = (6, 6))
 		ax = fig.add_subplot(111, projection='3d')
 		plt.pause(.1)
 
+		# prepare displacement and rotation angle array
 		theta = np.zeros(arm1.vec_org.shape)
 		trans = np.zeros(arm1.vec_org.shape)
 		pre_theta = np.zeros(arm1.vec_org.shape)
 		pre_trans = np.zeros(arm1.vec_org.shape)		
 		
-		
+
 		i = 0
 		j = 0
 		theta_dev = 1.0
@@ -143,6 +146,7 @@ if __name__ == "__main__":
 
 			plt.cla()
 			make_3Dgraph_asset(ax, [-30,30], [-30,30], [-30,30], "t="+str(i/10)+" [sec]")
+			# calc vector and display
 			for ii in range(len(arm)):	
 				arm[ii].calc_rot_arm(dtheta)
 				arm[ii].calc_trans_arm(dtrans)
@@ -160,6 +164,7 @@ if __name__ == "__main__":
 			# pre_trans = trans
 			# pre_theta = theta
 
+			# update movement function
 			trans[0] = 5*trans_dev*np.cos((i/25)*np.pi)
 			trans[1] = 5*trans_dev*np.sin((i/25)*np.pi)
 			trans[2] = 5*trans_dev*(1-np.exp(-i/50))
@@ -167,12 +172,15 @@ if __name__ == "__main__":
 			theta[1] = 20*np.sin(j/30*np.pi)
 			theta[2] = 10*np.sin(j/25*np.pi)
 
+			# add random movement
 			trans = trans + 2*(np.random.rand(3) - 0.5*np.ones(trans.shape))
 			theta = theta + 5*(np.random.rand(3) - 0.5*np.ones(trans.shape))
 
 			i += 1
 			j += 2
 
+
+		# TEST #
 		# 	ani = animation.FuncAnimation(fig, interval=500)
 		# ani.save("plot2.gif",writer='imagemagick')
 		# plt.cla()

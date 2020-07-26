@@ -51,4 +51,4 @@ python scripts at the class held on ourselvs.
 * Yuki Abe, SOKENDAI, abeyuki@post.kek.jp
 
 ## Licence
-
+MIT()

@@ -23,8 +23,8 @@ python scripts at the class held on ourselvs.
   ```
 ### Windows10
 - Install python3.6
-  https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe
-  -> Run python and check its version.
+  Python3.6.8-amd64-webinstall(https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe)
+  <br>-> Run python and check its version.
 - Install python Library
   ```
   $ python -m pip install numpy
@@ -32,6 +32,7 @@ python scripts at the class held on ourselvs.
   ```
 ### Linux
 - Install python3.6
+  Install reference(https://shimi-dai.com/install-python3-on-linux/)
   ```
   $ wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
   ```

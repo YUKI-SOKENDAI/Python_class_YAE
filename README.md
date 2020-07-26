@@ -23,7 +23,7 @@ python scripts at the class held on ourselvs.
   ```
 ### Windows10
 - Install python3.6
-  Python3.6.8-amd64-webinstall(https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe)
+  <br>[Python3.6.8-amd64-webinstall](https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64-webinstall.exe)
   <br>-> Run python and check its version.
 - Install python Library
   ```

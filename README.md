@@ -17,7 +17,7 @@ python scripts at the class held on ourselvs.
 -- matplotlib
 
 ## Installation
-- Fork this repository.
+- Cloning this repository to your device.
   ```
   $ git clone https://github.com/YUKI-SOKENDAI/Python_class_YAE.git
   ```
@@ -51,4 +51,4 @@ python scripts at the class held on ourselvs.
 * Yuki Abe, SOKENDAI, abeyuki@post.kek.jp
 
 ## Licence
-* Free licence.
+

@@ -32,7 +32,7 @@ python scripts at the class held on ourselvs.
   ```
 ### Linux
 - Install python3.6
-  Install reference(https://shimi-dai.com/install-python3-on-linux/)
+  <br>[Install reference](https://shimi-dai.com/install-python3-on-linux/)
   ```
   $ wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
   ```
